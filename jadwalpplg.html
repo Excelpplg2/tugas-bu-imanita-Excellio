@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Jadwal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url(../spider.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px; /* Increased max-width for the container */
+            height: auto; /* Set height to auto */
+            margin: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Added background for contrast */
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 3em; /* Increased font size */
+            margin-bottom: 20px; /* Increased margin for spacing */
+            text-align: center;
+        }
+
+        .table-wrapper {
+            overflow-x: auto; /* Enable horizontal scroll on small screens */
+            display: inline-block; /* Center the table */
+            width: 100%; /* Take full width */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.2em; 
+        }
+
+        th, td {
+            border: 2px dashed white; 
+            padding: 15px; 
+            text-align: center;
+            color: #fff;
+            min-width: 100px; 
+        }
+
+        th {
+            background-color: rgba(35, 35, 35, 0.8);
+        }
+
+        @media screen and (max-width: 500px) {
+            th, td {
+                font-size: 1em; 
+                padding: 10px; 
+            }
+            h2 {
+                font-size: 2.5em; 
+            }
+        }
+
+        th:hover {
+            background-color: #525252;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>JADWAL XPPLG2</h2> 
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Senin</th>
+                    <th>Selasa</th>
+                    <th>Rabu</th>
+                    <th>Kamis</th>
+                    <th>Jumat</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th rowspan="3">PAG</th>
+                    <th rowspan="3">DPPLG</th>
+                    <th rowspan="2">BNG</th>
+                    <th rowspan="3">IPAS</th>
+                    <th rowspan="2">DPPLG</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>SNM</th>
+                    <th>MTK</th>
+                </tr>
+                <tr>
+                    <th colspan="6">Ist</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th rowspan="3">POR</th>
+                    <th rowspan="3">DPPLG</th>
+                    <th>SNM</th>
+                    <th rowspan="3">IPAS</th>
+                    <th>MTK</th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th rowspan="2">SJR</th>
+                    <th rowspan="2">PPS</th>
+                </tr>
+                <tr>
+                    <th>6</th>
+                </tr>
+                <tr>
+                    <th colspan="6">Ist</th>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <th rowspan="2">MTK</th>
+                    <th rowspan="4">DPPLG</th>
+                    <th rowspan="2">BIN</th>
+                    <th rowspan="4">INF</th>
+                    <th rowspan="2">BIN</th>
+                </tr>
+                <tr>
+                    <th>8</th>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <th rowspan="2">BNG</th>
+                    <th rowspan="2">BJW</th>
+                    <th rowspan="2"></th>
+                </tr>
+                <tr>
+                    <th>10</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
